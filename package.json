@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend of Snips",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aoliveras/snips-backend.git"
+  },
+  "author": "Adam Oliveras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aoliveras/snips-backend/issues"
+  },
+  "homepage": "https://github.com/Aoliveras/snips-backend#readme",
+  "dependencies": {
+    "shortid": "^2.2.14"
+  }
+}
