@@ -15,7 +15,6 @@ const ErrorWithHTTPStatus = require('../utils/ErrorWithHTTPStatus');
  */
 
 /* Create */
-
 /**
  * Inserts new snippet into db.
  * @param {Snippet} newSnippet - the data to create the snippet with
@@ -51,7 +50,6 @@ exports.insert = async ({ author, code, title, description, language }) => {
 };
 
 /* Read */
-
 /**
  * Selects snippets from db.
  *
@@ -76,14 +74,12 @@ exports.select = async (query = {}) => {
 };
 
 /* Update */
-
 /**
  * Updates Snippet
  * @param {string} id - id of the snippet to update
  * @param {snippet} newData - subset of values to update
  */
 exports.update = async (id, newData) => {
-  console.log(newData);
   try {
     // TODO: error on id not found
     if (id.length === 0) throw new ErrorWithHTTPStatus(`Must give ID`);
@@ -111,7 +107,6 @@ exports.update = async (id, newData) => {
 };
 
 /* Delete */
-
 /**
  *@param {string} id - id
  */
