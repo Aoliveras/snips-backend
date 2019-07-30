@@ -4,7 +4,9 @@ const snippetsController = require('../controllers/snippets.controller');
 const router = express.Router();
 
 // ROOT route
-router.get('/', snippetsController.getSnippets);
+router.get('/', (req, res) => {
+  res.send('Welcome to Snips!');
+});
 // API ROOT
 router.get('/api', (req, res) => {
   res.send('Welcome to the Snips API!');
